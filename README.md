@@ -1,4 +1,4 @@
-# hacking_commands
+# Useful linux commands for the cyber security
 
 ### System Information
 - `hostname`
