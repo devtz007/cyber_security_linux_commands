@@ -58,6 +58,6 @@
 - `find / -size +<size>`
 - `find / -size -<size>`
 
-### Finding the SUID/SGID Bits 
-- `find / -type f \( -perm -04000 -o -perm -02000 \) -ls 2>/dev/null
-`
+### Finding the SUID/SGID Bits (P)
+- `find / -type f \( -perm -04000 -o -perm -02000 \) -ls 2>/dev/null` (Privilege Escalation: SUID)
+- `getcap -r / 2>/dev/null` (Privilege Escalation: Capabilities)
