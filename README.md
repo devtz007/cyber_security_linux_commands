@@ -59,5 +59,10 @@
 - `find / -size -<size>`
 
 ### Finding the SUID/SGID Bits (P)
-- `find / -type f -perm -04000 -ls 2>/dev/null` (Privilege Escalation: SUID)
-- `getcap -r / 2>/dev/null` (Privilege Escalation: Capabilities)
+- `find / -type f -perm -04000 -ls 2>/dev/null` (Privilege Escalation)
+
+### Shows Capabilities
+- `getcap -r / 2>/dev/null` (Privilege Escalation)
+
+### Shows Running Cron Jobs
+- `cat /etc/crontab` (Privilege Escalation)
