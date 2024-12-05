@@ -66,3 +66,6 @@
 
 ### Shows Running Cron Jobs
 - `cat /etc/crontab` (Privilege Escalation)
+
+### Insecure $PATH vulnerability
+- `find / -writable 2>/dev/null | cut -d "/" -f 2,3 | grep -v proc | sort -u` (Privilege Escalation)
